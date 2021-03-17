@@ -1,1 +1,1 @@
-# IP_tracker_app
+This projected was carried out as a solution to a challenge posted on Frontend mentor. It made use of two APIs namely:leafJS andmapbox. The layout was made respomsive for optimal viewing on both desktop and moblie devices.
