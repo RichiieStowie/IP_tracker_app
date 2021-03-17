@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="app.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+   <script src="app.js"></script>
+  
+  <title> IP Address Tracker</title>
+
+  
+</head>
+<body>
+<header>
+  <h1>IP Address Tracker</h1>
+  <form class="input-address">
+    <input class="input-request" type="text" placeholder="Search for any IP address or domain"><button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></button>
+    </form>
+    <div class="IP-details">
+      <section class="IP-address"><h2 id="details">IP address</h2><h3 id="digits"></h3></section>
+    <section class="IP-location"><h2 id="details">Location</h2><h3 id="location"></h3></section>
+    <section class="IP-timezone"><h2 id="details">Timezone</h2><h3 id="timezone"></h3></section>
+    <section class="IP-provider"><h2 id="details">ISP</h2><h3 id="provider"></h3></section>
+    </div>
+</header>
+
+<div id="mapid" style="height: 60vh;"></div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mbabie Richard</a>.
+    
+  </div>
+  
+</body>
+</html>

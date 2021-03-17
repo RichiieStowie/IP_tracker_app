@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-size: 16px;
+margin: auto;
+font-family: 'Rubik', sans-serif;
+}
+header{
+    background: url('pattern-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 40vh;   
+} 
+header h1{
+    margin-top: 20px;
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5em;
+    color: beige;
+}
+.input-address{
+    text-align: center;
+    width: 100%;
+}
+input{
+    width: 400px;
+    height: 40px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+button{
+    height: 40px;
+    width: 60px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: black;
+}
+button:active, button:hover{
+    background-color:darkgray;
+    cursor: pointer;
+}
+.IP-details{
+    display: flex;
+    flex-direction: row nowrap;
+    flex: 0 1 25%;
+    padding: 2% 2vw;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+    justify-content: flex-start;
+    z-index: 500;
+    transform: translateY(50%);
+    min-width: 40%;
+    max-width: 90vw;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: white;
+    
+}
+.IP-address {
+    border-right: 1px solid darkgray;
+  white-space: nowrap;
+  margin-right: 100px;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+    
+     
+}
+.IP-location{
+    border-right: 1px solid darkgray;
+    margin-right: 100px;
+    padding-right: 10%;
+    display: flex;
+  flex-direction: column;
+    justify-content: space-evenly;
+   
+}
+.IP-timezone{
+    border-right: 1px solid darkgray;
+    margin-right: 100px;
+    padding-right: 10%;
+    display: flex;
+  flex-direction: column;
+    justify-content: space-evenly;
+   
+}
+.IP-provider{
+    padding-right: 10%;
+    display: flex;
+  flex-direction: column;
+    
+}
+#details{
+    font-size: 0.8em;
+    text-transform: capitalize;
+    text-align: left;
+    color: darkgrey;
+}
+h3{
+    font-size: 2em;
+    color:rgb(24, 26, 26)   
+}
+@media screen and (max-width:450px){
+    *{
+        font-size: 16px;
+    }
+    input{
+        width: 200px;
+        height: 40px;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        font-size: 0.9em;
+    }
+    .IP-details{
+       flex-direction: column;
+       z-index: 500;
+    transform: translateY(50%);
+        
+    }
+    .IP-address,.IP-location,.IP-timezone{
+        border-right: unset;
+    }
+   
+
+}
+@media screen and (max-width:375px){
+    *{
+        font-size: 16px;
+    }
+    input{
+        width: 200px;
+        height: 40px;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        font-size: 0.9em;
+    }
+    .IP-details{
+       flex-direction: column;
+       z-index: 500;
+    transform: translateY(50%);
+        
+    }
+    .IP-address,.IP-location,.IP-timezone{
+        border-right: unset;
+    }
+   
+}
